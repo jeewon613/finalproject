@@ -6,7 +6,16 @@
  */
 
 
+.blogbtn{
+  height: 4em;
+  width: 8em;
+  color: blue;
 
+}
+
+.readmorebtn{
+  margin-left: 30em;
+}
 
 
 
