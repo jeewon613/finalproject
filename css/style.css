@@ -95,13 +95,18 @@
      border-radius: 0; }
 
 #intro{
-  padding-right: 30em;
+  margin-left: 0em !important;
+  padding-left: 0em !important;
+  width: 100em !important;
+  margin-right: 20em;
 }
 #intro1{
-  ;
+  width: 100em !important;
 }
 #intro2{
-  padding: em;
+  width: 150em !important;
+  padding: 0em !important;
+  margin-right: 50em !important;
 }
 :root {
   --blue: #007bff;
