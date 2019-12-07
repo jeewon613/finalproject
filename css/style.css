@@ -4,6 +4,153 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+#certi{
+  width: 3em;
+  height: 3em;
+}
+
+#medic{
+  margin-left: 12em !important;
+}
+
+.service-tab-section {
+  position: relative;
+}
+
+.service-tab-section .outer-box {
+  position: relative;
+  z-index: 1;
+}
+
+.tabs .nav-tabs > li, .tabs .nav-pills > li {
+  float: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.tabs .nav-tabs {
+  text-align: center;
+  border-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.tabs .nav-tabs li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.tabs .nav-tabs li a {
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 10px 25px;
+  font-weight: 600;
+  color: #4d4d4d;
+  font-family: "Source Sans Pro", sans-serif;
+  border: 2px solid #48bdc5;
+  border-radius: 0;
+  transition: all .3s ease;
+
+}
+
+.tabs .nav-tabs li a:hover {
+  background: #48bdc5;
+  color: #fff;
+  border: 2px solid #48bdc5;
+}
+
+.tabs .nav-tabs li.active a {
+  color: #fff;
+  background: #48bdc5;
+  border: 2px solid #48bdc5;
+}
+
+.tab-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  z-index: 99;
+}
+
+.service-box {
+  position: relative;
+  width: 100%;
+}
+
+.service-box img {
+  border-radius: 14px;
+  width: 100%;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+.service-box .contents {
+  margin-left: 30px;
+}
+
+@media (max-width: 991px) {
+  .service-box .contents {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+
+.service-box .contents .btn-style-one {
+  margin-top: 20px;
+}
+
+.service-box .section-title h3 {
+  position: relative;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  margin-bottom: 45px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.service-box .section-title h3:before {
+  position: absolute;
+  left: 0px;
+  content: '';
+  bottom: 0px;
+  background: #333333;
+  height: 1px;
+  width: 55px;
+}
+
+.service-box .text {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.service-box .text p {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.service-box .icon-box {
+  position: absolute;
+  top: 0px;
+  left: -5px;
+}
+
+.service-box .content-list {
+  padding-left: 0;
+}
+
+.service-box .content-list li {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
+  padding: 7px 0px;
+  list-style: none;
+}
+
+.service-box .content-list li i:before {
+  margin-right: 15px;
+}
+
 
 
 .blogbtn{
