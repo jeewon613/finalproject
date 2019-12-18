@@ -168,6 +168,415 @@
             <h2 class="mb-3">It is a long established fact a reader be distracted</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
 
+
+            <section id="hotels" class="parallax">
+              <div class="container">
+                <div class="row">
+
+                  <div class="col-md-12">
+
+                   <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center">
+                     <div class="wow fadeInUp section-title" data-wow-delay="1s">
+                        <h2>Best Hotels out there<small>The great advantage of a hotel is that it is a refuge from home life.</small></h2>
+                    </div>
+                  </div>
+
+                      <!-- iso section -->
+                      <div class="iso-section wow fadeInUp text-center" data-wow-delay="0.5">
+
+                        		<ul class="filter-wrapper clearfix">
+                                    <li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
+                                    <li><a href="#" class="opc-main-bg" data-filter=".london">London</a></li>
+                                    <li><a href="#" class="opc-main-bg" data-filter=".paris">Paris</a></li>
+                                    <li><a href="#" class="opc-main-bg" data-filter=".ny">New York</a></li>
+                                    <li><a href="#" class="opc-main-bg" data-filter=".hn">Hong Kong</a></li>
+                                </ul>
+
+                                <!-- iso box section -->
+                                <div class="iso-box-section wow fadeInUp" data-wow-delay="0.9s">
+                                  <div class="iso-box-wrapper col4-iso-box">
+
+                                    <div class="iso-box london paris ny col-md-4 col-sm-6">
+                                      <div class="gallery-thumb">
+                                        <a href="images/hotel-01.jpg" data-lightbox-gallery="food-gallery">
+                                          <img src="images/muniv1.jpg" class="fluid-img" alt="Gallery">
+                                            <div class="gallery-overlay">
+                                              <div class="gallery-item">
+                                                <i class="fa fa-search"></i>
+                                              </div>
+                                            </div>
+                                        </a>
+                                      </div>
+                                      <h3>Hotel Name</h3>
+                                    </div>
+
+                                    <div class="iso-box london ny hn col-md-4 col-sm-6">
+                                      <div class="gallery-thumb">
+                                        <a href="images/hotel-02.jpg" data-lightbox-gallery="food-gallery">
+                                          <img src="images/hotel-02.jpg" class="fluid-img" alt="Gallery">
+                                            <div class="gallery-overlay">
+                                              <div class="gallery-item">
+                                                <i class="fa fa-search"></i>
+                                              </div>
+                                            </div>
+                                        </a>
+                                      </div>
+                                      <h3>Hotel Name Two</h3>
+                                    </div>
+
+                                    <div class="iso-box hn col-md-4 col-sm-6">
+                                      <div class="gallery-thumb">
+                                        <a href="images/hotel-03.jpg" data-lightbox-gallery="food-gallery">
+                                          <img src="images/hotel-03.jpg" class="fluid-img" alt="Gallery">
+                                            <div class="gallery-overlay">
+                                              <div class="gallery-item">
+                                                <i class="fa fa-search"></i>
+                                              </div>
+                                            </div>
+                                        </a>
+                                      </div>
+                                      <h3>Hotel Name Three</h3>
+                                    </div>
+
+                                    <div class="iso-box london col-md-4 col-sm-6">
+                                      <div class="gallery-thumb">
+                                        <a href="images/hotel-04.jpg" data-lightbox-gallery="food-gallery">
+                                          <img src="images/hotel-04.jpg" class="fluid-img" alt="Gallery">
+                                            <div class="gallery-overlay">
+                                              <div class="gallery-item">
+                                                <i class="fa fa-search"></i>
+                                              </div>
+                                            </div>
+                                        </a>
+                                      </div>
+                                      <h3>Hotel Name Four</h3>
+                                    </div>
+
+                                    <div class="iso-box ny col-md-4 col-sm-6">
+                                      <div class="gallery-thumb">
+                                        <a href="images/hotel-05.jpg" data-lightbox-gallery="food-gallery">
+                                          <img src="images/hotel-05.jpg" class="fluid-img" alt="Gallery">
+                                            <div class="gallery-overlay">
+                                              <div class="gallery-item">
+                                                <i class="fa fa-search"></i>
+                                              </div>
+                                            </div>
+                                        </a>
+                                      </div>
+                                      <h3>Hotel Name Five</h3>
+                                    </div>
+
+                                    <div class="iso-box paris lunch col-md-4 col-sm-6">
+                                      <div class="gallery-thumb">
+                                        <a href="images/hotel-06.jpg" data-lightbox-gallery="food-gallery">
+                                          <img src="images/hotel-06.jpg" class="fluid-img" alt="Gallery">
+                                            <div class="gallery-overlay">
+                                              <div class="gallery-item">
+                                                <i class="fa fa-search"></i>
+                                              </div>
+                                            </div>
+                                        </a>
+                                      </div>
+                                      <h3>Hotel Name Six</h3>
+                                    </div>
+
+<Script>
+  function initParallax() {
+    $('#about').parallax("100%", 0.1);
+    $('#todo').parallax("100%", 0.3);
+    $('#about').parallax("100%", 0.1);
+    $('#video-sec').parallax("100%", 0.2);
+    $('#location').parallax("100%", 0.3);
+    $('#team').parallax("100%", 0.3);
+    $('#hotels').parallax("100%", 0.1);
+    $('#contact').parallax("100%", 0.2);
+  }
+  initParallax();
+
+    jQuery(document).ready(function($){
+
+      if ( $('.iso-box-wrapper').length > 0 ) {
+
+          var $container  = $('.iso-box-wrapper'),
+            $imgs     = $('.iso-box img');
+
+          $container.imagesLoaded(function () {
+
+            $container.isotope({
+            layoutMode: 'fitRows',
+            itemSelector: '.iso-box'
+            });
+
+            $imgs.load(function(){
+              $container.isotope('reLayout');
+            })
+
+          });
+
+          //filter items on button click
+
+          $('.filter-wrapper li a').click(function(){
+
+              var $this = $(this), filterValue = $this.attr('data-filter');
+
+          $container.isotope({
+            filter: filterValue,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false,
+            }
+          });
+
+          // don't proceed if already selected
+
+          if ( $this.hasClass('selected') ) {
+            return false;
+          }
+
+          var filter_wrapper = $this.closest('.filter-wrapper');
+          filter_wrapper.find('.selected').removeClass('selected');
+          $this.addClass('selected');
+
+            return false;
+          });
+
+      }
+
+    });
+
+
+</script>
+                                   </div>
+                                </div>
+
+                      </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+
+
+            <style>
+            * {
+              box-sizing: border-box;
+            }
+
+            body {
+              background-color: #f1f1f1 !important;
+              padding: 20px;
+              font-family: Arial;
+            }
+
+            /* Center website */
+            .maint {
+              max-width: 1000px;
+              margin: auto;
+            }
+
+
+
+            .rowt{
+              margin: 10px -16px;
+            }
+
+            /* Add padding BETWEEN each column */
+            .rowt
+            .rowt> .columnt{
+              padding: 5em !important;
+            }
+
+            /* Create three equal columns that floats next to each other */
+            .columnt {
+              float: left;
+              width: 33.33%;
+              display: none; /* Hide all elements by default */
+            }
+
+            /* Clear floats after rows */
+            .rowt:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+            /* Content */
+            .contentt {
+              background-color: white;
+              padding: 10px;
+            }
+
+            /* The "show" class is added to the filtered elements */
+            .showt {
+              display: block;
+            }
+
+            /* Style the buttons */
+            .btnt {
+              border: none;
+              outline: none;
+              padding: 12px 16px;
+              background-color: white;
+              cursor: pointer;
+            }
+
+            .btnt:hover {
+              background-color: #ddd;
+            }
+
+            .btnt.active {
+              background-color: #666;
+              color: white;
+            }
+            </style>
+
+            <body>
+
+            <!-- MAIN (Center website) -->
+            <div class="maint">
+
+            <div id="myBtnContainer">
+              <button class="btnt active" onclick="filterSelection('all')"> Show all</button>
+              <button class="btnt" onclick="filterSelection('nature')"> Nature</button>
+              <button class="btnt" onclick="filterSelection('cars')"> Cars</button>
+              <button class="btnt" onclick="filterSelection('people')"> People</button>
+            </div>
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="rowt">
+              <div class="columnt nature">
+                <div class="contentt">
+                  <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                  <h4>Mountains</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="columnt nature">
+                <div class="contentt">
+                <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+                  <h4>Lights</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="columnt nature">
+                <div class="contentt">
+                <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                  <h4>Forest</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+
+              <div class="columnt cars">
+                <div class="contentt">
+                  <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+                  <h4>Retro</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="columnt cars">
+                <div class="contentt">
+                <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+                  <h4>Fast</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="columnt cars">
+                <div class="contentt">
+                <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+                  <h4>Classic</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+
+              <div class="columnt people">
+                <div class="contentt">
+                  <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
+                  <h4>Girl</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="columnt people">
+                <div class="contentt">
+                <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
+                  <h4>Man</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+              <div class="columnt people">
+                <div class="contentt">
+                <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
+                  <h4>Woman</h4>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+              </div>
+            <!-- END GRID -->
+            </div>
+
+            <!-- END MAIN -->
+            </div>
+
+            <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("columnt");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "showt");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showt");
+              }
+            }
+
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btnts = btnContainer.getElementsByClassName("btnt");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
            <!-- .col-md-8 -->
 
@@ -222,6 +631,8 @@
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with Jeewon Kim by <a href="https://colorlib.com" target="_blank">Colorlib</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+
+
           </div>
         </div>
       </div>
@@ -245,6 +656,21 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
+  <script src="js/jquery.js"></script>
+
+  <script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/core.js"></script>
+
+
 
   <script src="js/main.js"></script>
 
