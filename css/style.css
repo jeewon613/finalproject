@@ -9989,3 +9989,11 @@ textarea.form-control {
 .navbar-brandblog::after{
  background: red !important;
 }
+
+.aboutmeblogrow{
+  margin-bottom: 10em !important;
+  margin-top: 10em !important;
+}
+.aboutmeblogphoto{
+  border-radius: 1em;
+}
