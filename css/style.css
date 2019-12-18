@@ -4981,14 +4981,6 @@ a.close.disabled {
     overflow-y: auto; }
 
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1050;
-  display: none;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
   outline: 0; }
 
 .modal-dialog {
@@ -8699,6 +8691,10 @@ h1, h2, h3, h4, h5,
   color: #3e64ff;
   letter-spacing: 4px; }
 
+.subheadingblog{
+  color: orange !important;
+}
+
 .slider-text h1 {
   font-size: 60px;
   font-weight: 800; }
@@ -8711,6 +8707,9 @@ h1, h2, h3, h4, h5,
   .slider-text h2 span {
     color: #3e64ff;
     text-decoration: underline; }
+.slider-textblog h2 span {
+  color: orange !important;
+}
 
 .slider-text p {
   font-size: 20px;
@@ -8767,7 +8766,7 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    background: #edf0ff;
+    background: white;
     z-index: -1;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -8787,7 +8786,9 @@ h1, h2, h3, h4, h5,
   -moz-animation: 1.6s ease infinite wheel-up-down;
   animation: 1.6s ease infinite wheel-up-down;
   color: #3e64ff;
-  font-size: 30px; }
+  font-size: 30px;
+  font-weight: 700;
+}
 
 @-webkit-keyframes wheel-up-down {
   100% {
@@ -9967,4 +9968,24 @@ textarea.form-control {
 
   body{
   overflow-x: hidden;
+}
+
+.overlay2{
+  background-color:#ff4d00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  opacity: 0.4;
+  width: 50%;
+}
+
+.blogmouse-wheel{
+  color: orange;
+}
+
+.navbar-brandblog::after{
+ background: red !important;
 }
