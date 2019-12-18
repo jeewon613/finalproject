@@ -2,7 +2,7 @@
 <index1>
 1. get images for the intro
 2. traits
-3. video modal
+3. video modal/button shape
 4. images/text for Resume
 5. imges for Blog
 6.
