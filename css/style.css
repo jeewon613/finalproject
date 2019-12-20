@@ -192,6 +192,7 @@
 
 
 
+
  .ftco-schedule {
    position: relative;
    width: 100%;
@@ -10017,4 +10018,15 @@ textarea.form-control {
 
 .videotext{
   margin-left: 1em !important;
+}
+
+.imgbride{
+  width: 50em;
+  height: 30em;
+}
+
+.edit{
+  width: 25em;
+  height: 30em;
+  margin-right: 2em;
 }
